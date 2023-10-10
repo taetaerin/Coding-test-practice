@@ -1,3 +1,5 @@
+//세 수 중 최솟값
+
 //Math.min 사용
 function solution(a, b, c){
     let answer;
