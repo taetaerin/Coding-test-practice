@@ -1,13 +1,15 @@
 //합이 같은 부분집합 
 function solution(arr){
-  let answer = "NO";
+  let answer = "NO", flag = 0;
   let total = arr.reduce((a,b) => a+b);
   let n = arr.length;
   
   function DFS(L, sum) {
+    if(flag) return;
     if(L == n) {
       if((total - sum) == sum) {
         answer = 'YES'
+        flag = 1;
       }
 
     }
